@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Wage Calculator</title>
+    <link rel= "stylesheet" href= "style.css">
+    <link href= 'https://emojipedia.org'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <script>
+      function calculate(){
+        const hour = document.getElementById("hours").value;
+        const money = document.getElementById("pay").value;
+
+        const result = parseFloat(hour) * parseFloat(money);
+
+        if(!isNaN(result))
+        {
+          document.getElementById("wage").innerHTML="Your total pay will be: £"+result;
+        }
+      }
+    </script>
+  </head>
+    <body>
+      <div class="calculator-container">
+        <div class="border">
+          <h1>Pay Calculator</h1>
+          <p class= title> How many hours did you work? </p><br>
+          <input type="number" id="hours" placeholder="Hours Worked..."class="values"><br>
+          <p class= title> How much are you paid per hour? </p><br>
+          <input type="number" id="pay" placeholder="Hourly Rate..." class="values"><br>
+          <button id="btn" onclick="calculate()">Calculate Wage</button>
+          <h2 id="wage"></h2>
+        </div>
+      </div>
+    </body>
