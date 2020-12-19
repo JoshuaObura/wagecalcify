@@ -1,3 +1,4 @@
+
 /* page styling */
 .calculator-container{
   display: flex;
@@ -15,13 +16,13 @@
 
   /* headings for each section */
     .title{
-      font-size: 16px;
+      font-size: 18px;
       display: inline-block;
     }
 
     /* entery bars */
       .values{
-        width: 40%;
+        width: 50%;
         height: 20px;
         height: 2rem;
       }
@@ -31,8 +32,8 @@
       #btn{
         background:black;
         color: white;
-        margin: 15px;
-        width: 40%;
+        margin: 3rem;
+        width: 50%;
         height: 2rem;
         border-radius: 5px;
       }
