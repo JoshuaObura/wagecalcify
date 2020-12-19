@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script>
       function calculate(){
         const hour = document.getElementById("hours").value;
@@ -17,9 +18,14 @@
         if(!isNaN(result))
         {
           document.getElementById("wage").innerHTML="Your total pay will be: £"+result;
+          confetti.start()
         }
+
+        /* document.getElementById("btn").addEventListener("keyup", function) */
       }
     </script>
+    <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
+    <!-- <script>confetti.start()</script> -->
   </head>
     <body>
       <div class="calculator-container">
